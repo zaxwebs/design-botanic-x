@@ -5,6 +5,10 @@ body {
 section {
 	padding: $spacer * 2 0;
 	position: relative;
+
+	@include media-breakpoint-up(xl) {
+		padding: $spacer * 3 0;
+	}
 }
 // UTILS
 @mixin bg-cover($path: false) {
@@ -44,6 +48,7 @@ section {
 
 // PAGE(s)
 #cover {
+	min-height: 45vh;
 	@include bg-cover('../images/plants-sofa.jpg');
 	background-size: 100% 100vh;
 	background-position-x: 0;
