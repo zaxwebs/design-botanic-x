@@ -1,5 +1,5 @@
 # Botanic X
-A concept desing built to test Lax.js's BG parallax feature.
+A concept design built to test Lax.js's BG parallax feature.
 
 # Commands
 * `npm install` - Install dependencies.
