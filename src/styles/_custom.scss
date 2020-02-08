@@ -74,3 +74,13 @@ section {
 		border-radius: $border-radius;
 	}
 }
+
+#motion {
+	.row {
+		@include media-breakpoint-up(md) {
+			.col {
+				min-height: 45vh;
+			}
+		}
+	}
+}
