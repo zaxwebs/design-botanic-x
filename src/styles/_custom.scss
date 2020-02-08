@@ -30,9 +30,7 @@ section {
 	color: $white;
 	min-height: 80vh;
 	background-color: $tertiary;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-centered();
 	padding: $spacer;
 }
 .btn {
@@ -72,15 +70,5 @@ section {
 	}
 	img {
 		border-radius: $border-radius;
-	}
-}
-
-#motion {
-	.row {
-		@include media-breakpoint-up(md) {
-			.col {
-				min-height: 45vh;
-			}
-		}
 	}
 }
