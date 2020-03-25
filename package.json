@@ -18,15 +18,15 @@
 	"author": "Zack Webster",
 	"license": "ISC",
 	"dependencies": {
-		"aos": "^3.0.0-beta.6",
+		"aos": "^2.3.4",
 		"bootstrap": "^4.4.1",
 		"jquery": "^3.4.1",
 		"lax.js": "^1.2.5",
-		"popper.js": "^1.16.0",
+		"popper.js": "^1.16.1",
 		"tiny-slider": "^2.9.2"
 	},
 	"devDependencies": {
 		"parcel-bundler": "^1.12.4",
-		"sass": "^1.24.4"
+		"sass": "^1.26.3"
 	}
 }
