@@ -1,74 +1,77 @@
 // BASE
 body {
-	min-height: 200vh;
+  min-height: 200vh;
 }
 section {
-	padding: $spacer * 2 0;
-	position: relative;
+  padding: $spacer * 2 0;
+  position: relative;
 
-	@include media-breakpoint-up(xl) {
-		padding: $spacer * 3 0;
-	}
+  @include media-breakpoint-up(xl) {
+    padding: $spacer * 3 0;
+  }
 }
 // UTILS
 @mixin bg-cover($path: false) {
-	@if $path {
-		background-image: url($path);
-	}
-	background-size: cover;
-	background-position: center center;
+  @if $path {
+    background-image: url($path);
+  }
+  background-size: cover;
+  background-position: center center;
 }
 @mixin flex-centered {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 // COMPONENTS
 .cover {
-	color: $white;
-	min-height: 80vh;
-	background-color: $tertiary;
-	@include flex-centered();
-	padding: $spacer;
+  color: $white;
+  min-height: 80vh;
+  background-color: $tertiary;
+  @include flex-centered();
+  padding: $spacer;
 }
 .btn {
-	border-radius: 999px;
-	padding: $spacer * 0.4 $spacer * 1.5;
+  border-radius: 999px;
+  padding: $spacer * 0.4 $spacer * 1.5;
 }
 
 .btn-primary {
-	color: $white;
+  color: $white;
 }
 
 // LAYOUT
 
 // PAGE(s)
 #cover {
-	min-height: 45vh;
-	@include bg-cover('../images/pine.jpg');
-	background-size: 100% 100vh;
-	background-position-x: 0;
-	background-position-y: 0;
-	background-size: initial;
+  min-height: 45vh;
+  @include bg-cover('../images/pine.jpg');
+  background-size: 100% 100vh;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: initial;
 }
 #tagline {
-	min-height: 20vh;
-	@include flex-centered();
+  min-height: 20vh;
+  @include flex-centered();
 }
 
 .category {
-	box-shadow: 0 0 20px rgba($tertiary, 0.15);
-	border-radius: $border-radius;
-	padding: $spacer * 1.5 $spacer;
-	&:hover {
-		box-shadow: 0 0 20px rgba($tertiary, 0.2);
-	}
-	p {
-		margin: $spacer;
-	}
-	img {
-		border-radius: $border-radius;
-	}
+  box-shadow: 0 0 20px rgba($tertiary, 0.15);
+  border-radius: $border-radius;
+  padding: $spacer * 1.2;
+  &:hover {
+    box-shadow: 0 0 20px rgba($tertiary, 0.2);
+  }
+  img {
+    margin-bottom: $spacer;
+  }
+  p {
+    margin-bottom: $spacer;
+  }
+  img {
+    border-radius: $border-radius;
+  }
 }
